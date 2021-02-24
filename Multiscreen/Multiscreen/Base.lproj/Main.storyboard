@@ -18,11 +18,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDY-gN-jFg">
-                                <rect key="frame" x="177" y="244" width="76" height="30"/>
+                                <rect key="frame" x="174" y="648" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Win Button"/>
                                 <connections>
                                     <segue destination="eea-fg-ZyJ" kind="presentation" id="Dw1-GE-UAC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuO-GG-MbJ">
+                                <rect key="frame" x="171" y="648" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lose Button"/>
+                                <connections>
+                                    <segue destination="Cmp-H8-Cq6" kind="presentation" id="YLD-aJ-dp4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nks-wg-kqV">
@@ -63,19 +71,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXq-kd-Okl">
-                                <rect key="frame" x="176" y="193" width="78" height="30"/>
+                                <rect key="frame" x="176" y="711" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Reset story"/>
                                 <connections>
                                     <action selector="fun_reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1qA-pq-bfb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuO-GG-MbJ">
-                                <rect key="frame" x="174" y="244" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Lose Button"/>
-                                <connections>
-                                    <segue destination="Cmp-H8-Cq6" kind="presentation" id="YLD-aJ-dp4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -84,6 +84,8 @@
                     </view>
                     <connections>
                         <outlet property="loseButton" destination="VuO-GG-MbJ" id="9HX-yA-Rbw"/>
+                        <outlet property="op1Button" destination="nks-wg-kqV" id="VJg-oX-EOI"/>
+                        <outlet property="op2Button" destination="MxQ-pp-OTB" id="yTD-fC-cHJ"/>
                         <outlet property="r1_l" destination="0Rc-PM-mc7" id="kWD-Wc-m4g"/>
                         <outlet property="r1_r" destination="Gtd-nV-avm" id="1N1-6o-67T"/>
                         <outlet property="winButton" destination="EDY-gN-jFg" id="u0B-eq-PgM"/>

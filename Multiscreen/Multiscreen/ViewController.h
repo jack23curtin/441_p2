@@ -12,6 +12,11 @@
 @property (nonatomic, strong) IBOutlet UIButton *loseButton;
 @property (nonatomic, strong) IBOutlet UIButton *resetButton;
 
+@property (nonatomic, strong) IBOutlet UIButton *op1Button;
+@property (nonatomic, strong) IBOutlet UIButton *op2Button;
+
+
+
 
 @property (nonatomic, strong) IBOutlet UILabel *r1_l;
 @property (nonatomic, strong) IBOutlet UILabel *r1_r;

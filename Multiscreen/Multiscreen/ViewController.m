@@ -19,6 +19,11 @@
 @synthesize loseButton;
 @synthesize resetButton;
 
+@synthesize op1Button;
+@synthesize op2Button;
+
+
+
 
 
 
@@ -40,6 +45,8 @@
     [r1_r setText:@"You walk down into the smaller cavern"];
     winButton.hidden = YES;
     loseButton.hidden = YES;
+    op1Button.hidden = NO;
+    op2Button.hidden = NO;
 
 }
 
@@ -54,7 +61,9 @@
         [r1_l setText:@"Escape!"];
         [r1_r setText:@" "];
         winButton.hidden = NO;
-        resetButton.hidden = YES;
+        op1Button.hidden = YES;
+        op2Button.hidden = YES;
+
 
         return;
     }
@@ -68,7 +77,8 @@
         [r1_l setText:@"Bridge collapsed, you fall into the void"];
         [r1_r setText:@""];
         loseButton.hidden = NO;
-        resetButton.hidden = YES;
+        op1Button.hidden = YES;
+        op2Button.hidden = YES;
 
         return;
     }
@@ -81,7 +91,8 @@
         [r1_l setText:@"Become the god of tasty meals"];
         [r1_r setText:@" "];
         winButton.hidden = NO;
-        resetButton.hidden = YES;
+        op1Button.hidden = YES;
+        op2Button.hidden = YES;
 
         return;
     }
@@ -98,7 +109,8 @@
         [r1_r setText:@"Anger the gods for refusing their gift"];
         [r1_l setText:@" "];
         loseButton.hidden = NO;
-        resetButton.hidden = YES;
+        op1Button.hidden = YES;
+        op2Button.hidden = YES;
 
         return;
     }
@@ -113,6 +125,8 @@
         [r1_r setText:@"It's a bear trap"];
         [r1_l setText:@""];
         loseButton.hidden = NO;
+        op1Button.hidden = YES;
+        op2Button.hidden = YES;
         return;
     }
 }
