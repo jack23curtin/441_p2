@@ -78,12 +78,20 @@
                                     <action selector="fun_reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1qA-pq-bfb"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You wake up in cave, loose rope tied around you, not remembering anything" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kps-FC-Odt">
+                                <rect key="frame" x="66" y="232" width="282" height="274"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="separatorColor"/>
                     </view>
                     <connections>
                         <outlet property="loseButton" destination="VuO-GG-MbJ" id="9HX-yA-Rbw"/>
+                        <outlet property="mainText" destination="Kps-FC-Odt" id="qMP-hh-LsM"/>
                         <outlet property="op1Button" destination="nks-wg-kqV" id="VJg-oX-EOI"/>
                         <outlet property="op2Button" destination="MxQ-pp-OTB" id="yTD-fC-cHJ"/>
                         <outlet property="r1_l" destination="0Rc-PM-mc7" id="kWD-Wc-m4g"/>
@@ -157,6 +165,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -21,6 +21,9 @@
 @property (nonatomic, strong) IBOutlet UILabel *r1_l;
 @property (nonatomic, strong) IBOutlet UILabel *r1_r;
 
+@property (nonatomic, strong) IBOutlet UILabel *mainText;
+
+
 
 
 @end
